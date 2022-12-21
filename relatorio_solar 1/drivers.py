@@ -1,15 +1,8 @@
-
-
-
-
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager 
 #DEFINIR OPCOES DE INICIALIZACAO
 from selenium.webdriver.chrome.options import Options
-
-
 
 def iniciar_driver_solar():
     chrome_options = Options()
@@ -31,7 +24,7 @@ def iniciar_driver_solar():
         
     })
     
-#inicializando webdrive
+    #inicializando webdrive
     driver = webdriver.Chrome(service=ChromeService(
     ChromeDriverManager().install()),options=chrome_options)
     return driver
